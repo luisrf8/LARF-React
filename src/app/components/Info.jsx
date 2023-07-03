@@ -1,7 +1,15 @@
 "use client";
 import React from "react";
-import { Grid, Typography, Button, Avatar } from "@mui/material";
-import Image from 'next/image';
+import {
+  Grid,
+  Typography,
+  Button,
+  Avatar,
+  Card,
+  CardContent,
+  CardActions,
+} from "@mui/material";
+import Image from "next/image";
 
 export default function Info() {
   return (
@@ -34,10 +42,9 @@ export default function Info() {
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
                 <span>
-                  Destaca por su habilidad para
-                  combinar colores, tipografías y elementos gráficos de manera
-                  innovadora, creando diseños atractivos y estéticamente
-                  agradables.
+                  Destaca por su habilidad para combinar colores, tipografías y
+                  elementos gráficos de manera innovadora, creando diseños
+                  atractivos y estéticamente agradables.
                 </span>
               </li>
               <li className="flex items-center mb-2">
@@ -49,10 +56,10 @@ export default function Info() {
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
                 <span>
-                  Luis posee un profundo conocimiento de los
-                  lenguajes de programación web, como HTML, CSS y JavaScript,
-                  así como de los frameworks y herramientas más populares en el
-                  campo del desarrollo front-end.
+                  Luis posee un profundo conocimiento de los lenguajes de
+                  programación web, como HTML, CSS y JavaScript, así como de los
+                  frameworks y herramientas más populares en el campo del
+                  desarrollo front-end.
                 </span>
               </li>
               <li className="flex items-center">
@@ -64,10 +71,9 @@ export default function Info() {
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
                 <span>
-                  Está constantemente
-                  actualizándose y aprendiendo nuevas técnicas y tecnologías.
-                  Está abierto a los desafíos y se adapta rápidamente a los
-                  cambios.
+                  Está constantemente actualizándose y aprendiendo nuevas
+                  técnicas y tecnologías. Está abierto a los desafíos y se
+                  adapta rápidamente a los cambios.
                 </span>
               </li>
             </ul>
@@ -80,21 +86,24 @@ export default function Info() {
         </Typography>
         <Grid container justifyContent="center">
           <Grid item data-aos="fade-up" data-aos-delay="400">
-            <Button
-              variant="contained"
-              className="text-white bg-purple-600 hover:bg-purple-700 w-full sm:w-auto sm:mb-0"
-            >
-              Start free trial
-            </Button>
-            {/* <Image src="/images/react.png" alt="" width={2} height={2} /> */}
+            <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
+              <Image src="/images/vue.png" alt="" width={70} height={70} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Vue js
+                </Typography>
+              </CardContent>
+            </Card>
           </Grid>
           <Grid item data-aos="fade-up" data-aos-delay="600">
-            <Button
-              variant="contained"
-              className="text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-            >
-              Learn more
-            </Button>
+            <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
+              <Image src="/images/react.png" alt="" width={70} height={70} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  React js
+                </Typography>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
       </Grid>

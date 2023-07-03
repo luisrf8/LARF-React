@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Grid, Typography, Button, Avatar } from "@mui/material";
+import Image from 'next/image';
 
 export default function Info() {
   return (
@@ -85,7 +86,7 @@ export default function Info() {
             >
               Start free trial
             </Button>
-            <img src="../utils/images/react.png"/>
+            {/* <Image src="/images/react.png" alt="" width={2} height={2} /> */}
           </Grid>
           <Grid item data-aos="fade-up" data-aos-delay="600">
             <Button

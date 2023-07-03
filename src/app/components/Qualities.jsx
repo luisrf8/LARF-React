@@ -19,42 +19,42 @@ export default function Qualities() {
                 <CardInfo
                   title="Pagando"
                   content="Contenido de la tarjeta 1"
-                  image="ruta/de/la/imagen1.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Animalitos"
                   content="Contenido de la tarjeta 2"
-                  image="ruta/de/la/imagen2.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Tiquera"
                   content="Contenido de la tarjeta 3"
-                  image="ruta/de/la/imagen3.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Pagando Wallet"
                   content="Contenido de la tarjeta 4"
-                  image="ruta/de/la/imagen4.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Animalitos Admin"
                   content="Contenido de la tarjeta 5"
-                  image="ruta/de/la/imagen5.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Kriptorifa"
                   content="Contenido de la tarjeta 6"
-                  image="ruta/de/la/imagen6.jpg"
+                  image="/images/react.png"
                 />
               </Grid>
             </Grid>

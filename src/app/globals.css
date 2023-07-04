@@ -33,7 +33,6 @@ img {
 }
 .pagination { 
   height: 100vh;
-  border-bottom: 1px solid #404040;
 }
 .content {
   display: flex;

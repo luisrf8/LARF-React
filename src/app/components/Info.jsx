@@ -8,42 +8,59 @@ import {
   Box,
   CircularProgress,
 } from "@mui/material";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import Image from "next/image";
 import { green, red } from "@mui/material/colors";
 
 function CircularProgressWithLabel(props) {
   return (
-    <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-      <CircularProgress variant="determinate" size={150} sx={{ color: props.colorLabel, width: '40rem', height: '40rem' }} {...props} />
-      <Box
-        sx={{
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          position: 'absolute',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <Typography variant="caption" component="div" color="text.secondary">
-          {props.name}
-        </Typography>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        color: props.colorLabel,
+      }}
+    >
+      <Box sx={{ position: "relative", display: "inline-flex" }}>
+        <CircularProgress
+          variant="determinate"
+          size={150}
+          sx={{ color: props.colorLabel, width: "40rem", height: "40rem" }}
+          {...props}
+        />
+        <Box
+          sx={{
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            position: "absolute",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Box sx={{ width: props.area, height: props.area }}>
+            <Image src={props.image} alt="" width={200} height={200} />
+          </Box>
+        </Box>
       </Box>
+      <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600}}>
+        {props.name}
+      </Typography>
     </Box>
   );
 }
 
 export default function Info() {
-  const colorLabelVue = "#4caf50";
-  const colorLabelReact = "#404040";
+  const colorLabelVue = "#00b126";
+  const colorLabelReact = "#00d0f5";
 
   return (
     <Grid container className="pagination">
-      <CircularProgressWithLabel value={80} name="Vue" colorLabel={colorLabelVue} />
-      <CircularProgressWithLabel value={65} name="React" colorLabel={colorLabelReact} />
       <Grid container spacing={2} alignItems="center" className="m-12 p-12">
         <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
           Aquí va la imagen
@@ -111,27 +128,30 @@ export default function Info() {
         </Grid>
       </Grid>
       <Grid container item className="max-w-3xl mx-auto" gap={6} md={12}>
-        <Typography variant="h4" data-aos="fade-up">
-          Frameworks
-        </Typography>
         <Grid container justifyContent="center">
           <Grid item data-aos="fade-up" data-aos-delay="400">
             <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
-              <Image src="/images/vue.png" alt="" width={70} height={70} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Vue js
-                </Typography>
+                <CircularProgressWithLabel
+                  value={80}
+                  name="Vue"
+                  colorLabel={colorLabelVue}
+                  image="/images/vue.png"
+                  area="18rem"
+                />
               </CardContent>
             </Card>
           </Grid>
           <Grid item data-aos="fade-up" data-aos-delay="600">
             <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
-              <Image src="/images/react.png" alt="" width={70} height={70} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  React js
-                </Typography>
+                <CircularProgressWithLabel
+                  value={65}
+                  name="React"
+                  colorLabel={colorLabelReact}
+                  image="/images/react.png"
+                  area="7rem"
+                />
               </CardContent>
             </Card>
           </Grid>

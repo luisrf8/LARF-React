@@ -13,11 +13,7 @@ const CardInfo = (props) => {
 
   return (
     <Card sx={{ width: '15rem', height: '20rem' }}>
-      {/* <CardMedia
-        image= {image}
-        title= {title}
-      /> */}
-      <Image src={image} alt="" width={70} height={70} />
+      {/* <Image src={image} alt="" width={70} height={70} /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}

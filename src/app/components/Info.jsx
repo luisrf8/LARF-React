@@ -3,17 +3,47 @@ import React from "react";
 import {
   Grid,
   Typography,
-  Button,
-  Avatar,
   Card,
   CardContent,
-  CardActions,
+  Box,
+  CircularProgress,
 } from "@mui/material";
+import PropTypes from 'prop-types';
 import Image from "next/image";
+import { green, red } from "@mui/material/colors";
+
+function CircularProgressWithLabel(props) {
+  return (
+    <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+      <CircularProgress variant="determinate" size={150} sx={{ color: props.colorLabel, width: '40rem', height: '40rem' }} {...props} />
+      <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Typography variant="caption" component="div" color="text.secondary">
+          {props.name}
+        </Typography>
+      </Box>
+    </Box>
+  );
+}
 
 export default function Info() {
+  const colorLabelVue = "#4caf50";
+  const colorLabelReact = "#404040";
+
   return (
     <Grid container className="pagination">
+      <CircularProgressWithLabel value={80} name="Vue" colorLabel={colorLabelVue} />
+      <CircularProgressWithLabel value={65} name="React" colorLabel={colorLabelReact} />
       <Grid container spacing={2} alignItems="center" className="m-12 p-12">
         <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
           Aquí va la imagen

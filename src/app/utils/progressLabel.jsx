@@ -1,13 +1,22 @@
 "use client";
 import React from 'react';
+import { useEffect } from 'react';
 import {
     Typography,
     Box,
     CircularProgress,
   } from "@mui/material";
+import WebFont from 'webfontloader';
 import Image from 'next/image';
 
 function CircularProgressWithLabel(props) {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Unica One', 'Chilanka']
+      }
+    });
+   }, []);
     return (
       <Box
         sx={{
@@ -43,7 +52,7 @@ function CircularProgressWithLabel(props) {
             </Box>
           </Box>
         </Box>
-        <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600}}>
+        <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600, fontFamily: 'Unica One'}}>
           {props.name}
         </Typography>
       </Box>

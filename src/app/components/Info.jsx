@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
+import { useEffect } from 'react';
 import {
   Grid,
   Typography,
   Card,
   CardContent,
 } from "@mui/material";
+import WebFont from 'webfontloader';
 import PropTypes from "prop-types";
 import CircularProgressWithLabel from '../utils/progressLabel';
 import Section from "../utils/section";
@@ -13,7 +15,13 @@ import Section from "../utils/section";
 export default function Info() {
   const colorLabelVue = "#00b126";
   const colorLabelReact = "#00d0f5";
-
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Unica One', 'Chilanka']
+      }
+    });
+   }, []);
   return (
     <Grid container className="pagination">
       <Section>
@@ -21,16 +29,17 @@ export default function Info() {
         <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
           Aquí va la imagen
         </Grid>
-        <Grid item md={7} lg={6} data-aos="fade-right">
+        <Grid item md={7} lg={6} data-aos="fade-right" >
           <div className="md:pr-4 lg:pr-12 xl:pr-16">
             <Typography
               variant="h4"
               component="div"
               className="font-architects-daughter text-purple-600 mb-2"
+              sx={{fontFamily: 'Unica One'}}
             >
               About Me.
             </Typography>
-            <Typography variant="body1" className="text-gray-400 mb-4">
+            <Typography variant="body1" className="text-gray-400 mb-4" sx={{fontFamily: 'Unica One'}}>
               Luis Rojas es un talentoso desarrollador front-end con una sólida
               experiencia en la creación de interfaces de usuario
               impresionantes.

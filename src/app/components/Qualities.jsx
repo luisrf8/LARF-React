@@ -15,7 +15,7 @@ export default function Qualities() {
    }, []);
   return (
     <Grid container className="pagination " justifyContent="center">
-      <Grid item xs={12} md={8} lg={6} className='mt-4'>
+      <Grid item xs={12} md={8} lg={8} className='mt-4'>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>
             <Typography variant="h5" align="center" gutterBottom sx={{fontFamily: 'Unica One'}}>

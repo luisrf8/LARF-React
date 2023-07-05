@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'UnicaOne';
+  src: local('UnicaOne') local('./fonts/UnicaOne-Regular.ttf') format('truetype');
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,7 +23,7 @@
 body {
   /* color: rgb(var(--foreground-rgb)); */
   color: #404040;
-  font-family: 'Unica One';
+  font-family: 'UnicaOne';
   background: #ffff;
   /* background: linear-gradient(
       to bottom,

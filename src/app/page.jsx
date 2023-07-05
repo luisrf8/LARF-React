@@ -6,6 +6,7 @@ import Info from "./components/Info";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import SocialMedia from "./components/SocialMedia";
+import Qualities from "./components/Qualities";
 import Section from "./utils/section";
 import WebFont from 'webfontloader';
 
@@ -28,6 +29,9 @@ export default function Home() {
       </Section>
       <Section>
         <Projects />
+      </Section>
+      <Section>
+        <Qualities />
       </Section>
       <Section>
         <SocialMedia />

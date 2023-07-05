@@ -5,55 +5,10 @@ import {
   Typography,
   Card,
   CardContent,
-  Box,
-  CircularProgress,
 } from "@mui/material";
 import PropTypes from "prop-types";
-import Image from "next/image";
-import { green, red } from "@mui/material/colors";
-
-function CircularProgressWithLabel(props) {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        color: props.colorLabel,
-      }}
-    >
-      <Box sx={{ position: "relative", display: "inline-flex" }}>
-        <CircularProgress
-          variant="determinate"
-          size={150}
-          sx={{ color: props.colorLabel, width: "40rem", height: "40rem" }}
-          {...props}
-        />
-        <Box
-          sx={{
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0,
-            position: "absolute",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Box sx={{ width: props.area, height: props.area }}>
-            <Image src={props.image} alt="" width={200} height={200} />
-          </Box>
-        </Box>
-      </Box>
-      <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600}}>
-        {props.name}
-      </Typography>
-    </Box>
-  );
-}
+import CircularProgressWithLabel from '../utils/progressLabel';
+import Section from "../utils/section";
 
 export default function Info() {
   const colorLabelVue = "#00b126";
@@ -61,6 +16,7 @@ export default function Info() {
 
   return (
     <Grid container className="pagination">
+      <Section>
       <Grid container spacing={2} alignItems="center" className="m-12 p-12">
         <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
           Aquí va la imagen
@@ -157,6 +113,7 @@ export default function Info() {
           </Grid>
         </Grid>
       </Grid>
+      </Section>
     </Grid>
   );
 }

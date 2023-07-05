@@ -8,12 +8,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 
-const CardInfo = (props) => {
+function CardInfo (props)  {
   const { title, content, image } = props;
 
   return (
     <Card sx={{ width: '15rem', height: '20rem' }}>
-      {/* <Image src={image} alt="" width={70} height={70} /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}

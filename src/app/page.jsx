@@ -3,7 +3,7 @@ import * as React from "react";
 import { useEffect } from 'react';
 import Intro from "./components/Intro";
 import Info from "./components/Info";
-import Qualities from "./components/Qualities";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import SocialMedia from "./components/SocialMedia";
 import Section from "./utils/section";
@@ -24,7 +24,7 @@ export default function Home() {
       </Section>
         <Info />
       <Section>
-        <Qualities />
+        <Experience />
       </Section>
       <Section>
         <Projects />

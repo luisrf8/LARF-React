@@ -2,16 +2,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { Grid, Typography, Button } from "@mui/material";
-import WebFont from "webfontloader";
 
 export default function Intro() {
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ["Unica One", "Chilanka"],
-      },
-    });
-  }, []);
+
   return (
     <Grid container className="pagination" justifyContent="center">
       <Grid
@@ -23,7 +16,6 @@ export default function Intro() {
           variant="h2"
           className="mb-4"
           data-aos="fade-up"
-          sx={{ fontFamily: "Unica One" }}
         >
           Luis Rojas, Front-End developer
         </Typography>
@@ -37,7 +29,6 @@ export default function Intro() {
             <Button
               variant="contained"
               className="text-white bg-gray-700 hover:bg-gray-800 w-full mb-4 sm:w-auto sm:mb-0"
-              sx={{ fontFamily: "Unica One" }}
             >
               Start free trial
             </Button>
@@ -46,7 +37,6 @@ export default function Intro() {
             <Button
               variant="contained"
               className="text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-              sx={{ fontFamily: "Unica One" }}
             >
               Learn more
             </Button>

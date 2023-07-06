@@ -6,17 +6,10 @@ import {
     Box,
     CircularProgress,
   } from "@mui/material";
-import WebFont from 'webfontloader';
 import Image from 'next/image';
 
 function CircularProgressWithLabel(props) {
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Unica One', 'Chilanka']
-      }
-    });
-   }, []);
+
     return (
       <Box
         sx={{
@@ -52,7 +45,7 @@ function CircularProgressWithLabel(props) {
             </Box>
           </Box>
         </Box>
-        <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600, fontFamily: 'Unica One'}}>
+        <Typography variant="caption" component="div" sx={{fontSize: '1.5rem', fontWeight: 600, }}>
           {props.name}
         </Typography>
       </Box>

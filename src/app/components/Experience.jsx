@@ -1,24 +1,16 @@
 "use client";
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
-import { useEffect } from 'react';
 import CardInfo from '../utils/card_info';
-import WebFont from 'webfontloader';
 
 export default function Experience() {
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Unica One', 'Chilanka']
-      }
-    });
-   }, []);
+
   return (
     <Grid container className="pagination" justifyContent="center" alignItems="center">
       <Grid item xs={12} md={8} lg={12} >
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>
-            <Typography variant="h5" align="center" gutterBottom sx={{fontFamily: 'Unica One'}}>
+            <Typography variant="h5" align="center" gutterBottom >
               Experiencia. 
             </Typography>
           </Grid>

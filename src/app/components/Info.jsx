@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-import { useEffect } from 'react';
 import {
   Grid,
   Typography,
   Card,
   CardContent,
 } from "@mui/material";
-import PropTypes from "prop-types";
 import CircularProgressWithLabel from '../utils/progressLabel';
 import Section from "../utils/section";
 
@@ -25,14 +23,14 @@ export default function Info() {
         </Grid>
         <Grid item md={7} lg={6} data-aos="fade-right" >
           <div className="md:pr-4 lg:pr-12 xl:pr-16">
-            <Typography
-              variant="h4"
+            {/* <Typography
+              variant="h2"
               component="div"
               className="font-architects-daughter text-purple-600 mb-2"
             >
               About Me.
-            </Typography>
-            <Typography variant="body1" className="text-gray-400 mb-4" >
+            </Typography> */}
+            <Typography variant="body1" className="text-gray-400 mb-4" sx={{fontSize: '1.5rem', color: '#404040'}}>
               Luis Rojas es un talentoso desarrollador front-end con una sólida
               experiencia en la creación de interfaces de usuario
               impresionantes.
@@ -46,11 +44,11 @@ export default function Info() {
                 >
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
-                <span>
+                <Typography sx={{fontSize: '1.5rem', color: '#404040'}}>
                   Destaca por su habilidad para combinar colores, tipografías y
                   elementos gráficos de manera innovadora, creando diseños
                   atractivos y estéticamente agradables.
-                </span>
+                </Typography>
               </li>
               <li className="flex items-center mb-2">
                 <svg
@@ -60,12 +58,12 @@ export default function Info() {
                 >
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
-                <span>
+                <Typography sx={{fontSize: '1.5rem', color: '#404040'}}>
                   Luis posee un profundo conocimiento de los lenguajes de
                   programación web, como HTML, CSS y JavaScript, así como de los
                   frameworks y herramientas más populares en el campo del
                   desarrollo front-end.
-                </span>
+                </Typography>
               </li>
               <li className="flex items-center">
                 <svg
@@ -75,11 +73,11 @@ export default function Info() {
                 >
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
-                <span>
+                <Typography sx={{fontSize: '1.5rem', color: '#404040'}}>
                   Está constantemente actualizándose y aprendiendo nuevas
                   técnicas y tecnologías. Está abierto a los desafíos y se
                   adapta rápidamente a los cambios.
-                </span>
+                </Typography>
               </li>
             </ul>
           </div>

@@ -11,16 +11,16 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function AccordionInfo(props) {
   const { title, content, image } = props;
   return (
-    <Accordion sx={{ width: "30rem",  }}>
+    <Accordion sx={{ width: "30rem", fontSize: "4rem"  }}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography>{title}</Typography>
+        <Typography sx={{fontSize: "2rem"}}>{title}</Typography>
       </AccordionSummary>
       <AccordionDetails sx={{height: '7rem'}}>
-        <Typography sx={{ display: "flex" }}>
+        <Typography sx={{ display: "flex", fontSize: "1rem" }}>
           <svg
             className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0 mt-4"
             viewBox="0 0 12 12"

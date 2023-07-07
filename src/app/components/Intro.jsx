@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import { useEffect } from "react";
 import { Grid, Typography, Button } from "@mui/material";
-
 export default function Intro() {
 
   return (
@@ -10,12 +8,13 @@ export default function Intro() {
       <Grid
         item
         className="content items-center"
-        sx={{ display: "flex", flexDirection: "column" }}
+        sx={{ display: "flex", flexDirection: "column", }}
       >
         <Typography
           variant="h2"
           className="mb-4"
           data-aos="fade-up"
+          // sx={{fontFamily: 'LemonMilk'}}
         >
           Luis Rojas, Front-End developer
         </Typography>

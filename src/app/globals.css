@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: 'UnicaOne';
-  src: local('UnicaOne') local('./fonts/UnicaOne-Regular.ttf') format('truetype');
+  font-family: 'LemonMilk';
+  src: src('./fonts/LEMONMILK-MediumItalic.ttf') format('truetype');
 }
 
 :root {
@@ -23,7 +23,7 @@
 body {
   /* color: rgb(var(--foreground-rgb)); */
   color: #404040;
-  font-family: 'UnicaOne';
+  font-family: 'LemonMilk';
   background: #ffff;
   /* background: linear-gradient(
       to bottom,
@@ -35,12 +35,28 @@ body {
 img {
   width: 40rem;
 }
-.pagination { 
-  height: 100vh;
-}
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 599px) {
+  .pagination {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .pagination {
+    /* Estilos específicos para tableta */
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .pagination {
+    height: 100vh;
+  }
 }

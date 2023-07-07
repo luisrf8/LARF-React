@@ -16,46 +16,46 @@ export default function Experience() {
           </Grid>
           <Grid item xs={12}>
             <Grid container spacing={4} justifyContent="center">
-              <Grid item >
+              <Grid item>
                 <CardInfo
                   title="Pagando"
                   content="Contenido de la tarjeta 1"
-                  image="/images/react.png"
+                  image="/images/Isotipo_1.svg"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Animalitos"
                   content="Contenido de la tarjeta 2"
-                  image="/images/react.png"
+                  image="/images/isotipo-animales.svg"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Tiquera"
                   content="Contenido de la tarjeta 3"
-                  image="/images/react.png"
+                  image="/images/Logo-tiquera-ticket.png"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Pagando Wallet"
                   content="Contenido de la tarjeta 4"
-                  image="/images/react.png"
+                  image="/images/Isotipo_1.svg"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Animalitos Admin"
                   content="Contenido de la tarjeta 5"
-                  image="/images/react.png"
+                  image="/images/isotipo-animales.svg"
                 />
               </Grid>
               <Grid item>
                 <CardInfo
                   title="Kriptorifa"
                   content="Contenido de la tarjeta 6"
-                  image="/images/react.png"
+                  image="/images/logo-carrousel-kriptorifa.webp"
                 />
               </Grid>
             </Grid>

@@ -10,6 +10,7 @@ function CardInfo (props)  {
   const { title, content, image } = props;
   return (
     <Box sx={{width: '15rem', height: '20rem',}}>
+        <Image src={image} alt="" width={200} height={200} sx={{marginBottom:'5rem'}}/>
         <Typography gutterBottom variant="h5" component="div" >
           {title}
         </Typography>

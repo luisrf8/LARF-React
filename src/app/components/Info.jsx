@@ -14,6 +14,7 @@ import Section from "../utils/section";
 export default function Info() {
   const colorLabelVue = "#00b126";
   const colorLabelReact = "#00d0f5";
+  const colorLabelSolidity = "#292929";
 
   return (
     <Grid container className="pagination">
@@ -86,6 +87,19 @@ export default function Info() {
       </Grid>
       <Grid container item className="max-w-3xl mx-auto" gap={6} md={12}>
         <Grid container justifyContent="center">
+        <Grid item data-aos="fade-up" data-aos-delay="600">
+            <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
+              <CardContent>
+                <CircularProgressWithLabel
+                  value={65}
+                  name="React"
+                  colorLabel={colorLabelReact}
+                  image="/images/react.png"
+                  area="7rem"
+                />
+              </CardContent>
+            </Card>
+          </Grid>
           <Grid item data-aos="fade-up" data-aos-delay="400">
             <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
               <CardContent>
@@ -99,15 +113,16 @@ export default function Info() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item data-aos="fade-up" data-aos-delay="600">
+          <Grid item data-aos="fade-up" data-aos-delay="400">
             <Card sx={{ width: "15rem", height: "20rem", boxShadow: "none" }}>
               <CardContent>
                 <CircularProgressWithLabel
-                  value={65}
-                  name="React"
-                  colorLabel={colorLabelReact}
-                  image="/images/react.png"
-                  area="7rem"
+                  value={50}
+                  name="Solidity"
+                  colorLabel={colorLabelSolidity}
+                  image="/images/solidity.png"
+                  area='3.5rem'
+                  restdasds='1.8rem'
                 />
               </CardContent>
             </Card>

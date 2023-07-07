@@ -24,7 +24,7 @@ function CircularProgressWithLabel(props) {
           <CircularProgress
             variant="determinate"
             size={150}
-            sx={{ color: props.colorLabel, width: "40rem", height: "40rem" }}
+            sx={{ color: props.colorLabel, width: "40rem", height: "40rem", }}
             {...props}
           />
           <Box
@@ -40,8 +40,8 @@ function CircularProgressWithLabel(props) {
               justifyContent: "center",
             }}
           >
-            <Box sx={{ width: props.area, height: props.area }}>
-              <Image src={props.image} alt="" width={200} height={200} />
+            <Box sx={{ width: props.area, height: props.area, marginBottom: props.restdasds }}>
+              <Image src={props.image} alt="" width={200} height={200} sx={{marginBottom:'5rem'}}/>
             </Box>
           </Box>
         </Box>

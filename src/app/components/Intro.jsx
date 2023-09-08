@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Grid, Typography, Button, Box } from "@mui/material";
+import { Grid, Typography, Button, Box,  } from "@mui/material";
+import Image from 'next/image';
 export default function Intro() {
   return (
     <Grid container className="pagination" justifyContent="center">
@@ -9,7 +10,7 @@ export default function Intro() {
         className="content items-center"
         sx={{ display: "flex", flexDirection: "column" }}
       >
-        <Box
+        {/* <Box
           sx={{
             position: "relative",
             width: "100px",
@@ -39,10 +40,13 @@ export default function Intro() {
               backgroundColor: "transparent",
             }}
           />
+        </Box> */}
+       <Box sx={{width: '10rem', height: '5rem', marginBottom: '7rem'}}>
+        
+        <Image src='/images/lr-logo.png' alt="" width={800} height={800}/>
         </Box>
         <Typography
           variant="h1"
-          className="mb-4"
           data-aos="fade-up"
           // sx={{fontFamily: 'LemonMilk'}}
         >
@@ -57,12 +61,11 @@ export default function Intro() {
           >
             <Button
               variant="contained"
-              className="text-white hover:bg-gray-800 w-full mb-4 sm:w-auto sm:mb-0"
+              className="text-white hover:bg-gray-800 bg-gray-800 w-full mb-4 sm:w-auto sm:mb-0"
               sx={{
                 width: "15rem",
                 height: "3rem",
                 fontSize: "1.5rem",
-                backgroundColor: "#404040",
               }}
             >
               View Projects
@@ -71,7 +74,7 @@ export default function Intro() {
           <Grid item data-aos="fade-up" data-aos-delay="600">
             <Button
               variant="contained"
-              className="text-white  hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+              className="text-white hover:bg-gray-800 bg-gray-800 w-full sm:w-auto sm:ml-4"
               sx={{
                 width: "15rem",
                 height: "3rem",

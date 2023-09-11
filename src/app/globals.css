@@ -22,7 +22,7 @@
 
 body {
   /* color: rgb(var(--foreground-rgb)); */
-  color: #404040;
+  color: #ffff;
   font-family: 'LemonMilk';
   background: #ffff;
   /* background: linear-gradient(
@@ -41,6 +41,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vh;
 }
 @media screen and (max-width: 599px) {
   .pagination {
@@ -51,7 +52,7 @@ img {
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .pagination {
-    /* Estilos específicos para tableta */
+    height: 100vh;
   }
 }
 

@@ -1,63 +1,23 @@
-"use client";
 import React from "react";
-import { Grid, Typography, Button, Box,  } from "@mui/material";
-import Image from 'next/image';
+import { Grid, Typography, Button, Box } from "@mui/material";
+import Image from "next/image";
 export default function Intro() {
   return (
-    <Grid container className="pagination" justifyContent="center">
+    <Grid container className="pagination flex justify-center items-center" sx={{ backgroundColor: "#404040"}}>
       <Grid
-        item
-        className="content items-center"
-        sx={{ display: "flex", flexDirection: "column" }}
+        className="content"
       >
-        {/* <Box
-          sx={{
-            position: "relative",
-            width: "100px",
-            height: "100px",
-            marginBottom: "1.5rem",
-          }}
-        >
-          <Box
-            sx={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              borderRadius: "50%",
-              backgroundColor: "orange",
-            }}
-          />
-          <Box
-            sx={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              borderRadius: "50%",
-              border: "2px solid black",
-              top: "45%",
-              left: "35%",
-              transform: "translate(-50%, -50%)",
-              backgroundColor: "transparent",
-            }}
-          />
-        </Box> */}
-       <Box sx={{width: '10rem', height: '5rem', marginBottom: '7rem'}}>
-        
-        <Image src='/images/lr-logo.png' alt="" width={800} height={800}/>
+        <Box sx={{ width: "10rem", height: "5rem", marginBottom: "7rem" }}>
+          <Image src="/images/lr-logo.png" alt="" width={800} height={800} />
         </Box>
-        <Typography
-          variant="h1"
-          data-aos="fade-up"
-          // sx={{fontFamily: 'LemonMilk'}}
-        >
-          Luis Rojas, Front-End developer
+        <Typography variant="h1" data-aos="fade-up">
+          Luis Rojas
+        </Typography>
+        <Typography variant="h1" data-aos="fade-up">
+          Front-End developer
         </Typography>
         <Grid container justifyContent="center" sx={{ marginTop: "50px" }}>
           <Grid
-            item
-            data-aos="fade-up"
-            data-aos-delay="400"
-            sx={{ marginRight: "10px" }}
           >
             <Button
               variant="contained"

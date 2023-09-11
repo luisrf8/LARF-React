@@ -17,7 +17,7 @@ export default function Info() {
   return (
     <Grid container className="pagination">
       <Section>
-      <Grid container spacing={2} alignItems="center" className="m-12 p-12">
+      <Grid container spacing={2} alignItems="center" className="p-12">
         <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
           Aquí va la imagen
         </Grid>

@@ -69,7 +69,7 @@ img {
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 35px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-30%);
   border-radius: 50%;
@@ -82,6 +82,6 @@ img {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
 }

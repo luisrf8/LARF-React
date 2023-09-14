@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: 'LemonMilk';
-  src: src('./fonts/LEMONMILK-MediumItalic.ttf') format('truetype');
+  font-family: 'Raleway';
+  src: url('./fonts/static/Raleway-Regular.ttf') format('truetype'); /* Corregimos la URL y especificamos el formato */
 }
 
 :root {
@@ -24,16 +24,10 @@
   display: none; /* Oculta el elemento del cursor */
 }
 body {
-  /* color: rgb(var(--foreground-rgb)); */
   color: #ffff;
-  font-family: 'LemonMilk';
-  background: #ffff;
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  font-family: 'Raleway', sans-serif;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='3' height='3' fill-opacity='0.71' fill='%23272C2D'/%3E%3C/svg%3E");
 }
 img {
   width: 40rem;
@@ -75,6 +69,15 @@ img {
   border-radius: 50%;
   display: inline-block;
   animation: bounce 2s infinite; 
+}
+.sombra-semicirculo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
+  border-radius: 50%;
+  /* filter: blur(5rem); */
+  z-index: -1;
 }
 
 @keyframes bounce {

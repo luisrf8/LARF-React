@@ -18,7 +18,7 @@ function CardInfo (props)  {
           {content}
         </Typography>
         <Button size="small" >Ir a la página</Button>
-        </Box>
+    </Box>
   );
 };
 

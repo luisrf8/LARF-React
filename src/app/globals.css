@@ -80,6 +80,16 @@ img {
   z-index: -1;
 }
 
+  .cards {
+    width: 15rem;
+    height: 14rem;
+    /* border-width: 2px;
+    border-image: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%); */
+    background-color: transparent;
+    /* margin-right: 10px; */
+  }
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);

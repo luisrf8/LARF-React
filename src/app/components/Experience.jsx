@@ -80,6 +80,9 @@ export default function Experience() {
           ))}
         </Grid>
       </Grid>
+      {/* <div className="sombra-semicirculo" style={{ bottom: -1800, left: -150,  height:'40rem' ,filter: 'blur(6rem)'}}></div> */}
+      {/* <div className="sombra-semicirculo" style={{ bottom: -1680, left: -200, height:'30rem' , filter: 'blur(4rem)'}}></div> */}
+      {/* <div className="sombra-semicirculo" style={{ bottom: -1010, left: 10, width: '7rem',height:'7rem',  filter: 'blur(0.08rem)'}}></div> */}
     </Grid>
   );
 }

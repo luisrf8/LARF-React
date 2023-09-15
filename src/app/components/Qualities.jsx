@@ -1,21 +1,94 @@
 "use client";
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import AccordionInfo from "../utils/accordion";
-
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+} from "@mui/lab";
+import TimelineOppositeContent, {
+  timelineOppositeContentClasses,
+} from '@mui/lab/TimelineOppositeContent';
 export default function Experience() {
   return (
     <Grid
       container
       className="pagination"
-      justifyContent="center"
       alignItems="center"
     >
+        <Grid xs={6}>
+        <Timeline
+      sx={{
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: 0.2,
+        },
+      }}
+    >
+      <TimelineItem>
+        <TimelineOppositeContent color="textSecondary">
+          09:30 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Eat</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent color="textSecondary">
+          10:00 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+        </TimelineSeparator>
+        <TimelineContent>Code</TimelineContent>
+      </TimelineItem>
+    </Timeline>
+        </Grid>
+        <Grid xs={6}>
+        <Timeline
+      sx={{
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: 0.2,
+        },
+      }}
+    >
+      <TimelineItem>
+        <TimelineOppositeContent color="textSecondary">
+          09:30 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Eat</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent color="textSecondary">
+          10:00 am
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+        </TimelineSeparator>
+        <TimelineContent>Code</TimelineContent>
+      </TimelineItem>
+    </Timeline>
+        </Grid>
+  
       <Grid item xs={12} md={8} lg={12}>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>
-            <Typography variant="h2" align="center" gutterBottom >
-              Habilidades.
+            <Typography
+              variant="h2"
+              align="center"
+              gutterBottom
+              className="font-type"
+            >
+              Skills.
             </Typography>
           </Grid>
           <Grid item xs={12}>

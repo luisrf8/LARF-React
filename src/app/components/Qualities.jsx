@@ -12,7 +12,7 @@ import {
 } from "@mui/lab";
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
-} from '@mui/lab/TimelineOppositeContent';
+} from "@mui/lab/TimelineOppositeContent";
 export default function Experience() {
   return (
     <Grid
@@ -21,7 +21,6 @@ export default function Experience() {
       justifyContent="center"
       alignItems="center"
     >
-
       <Grid item xs={12} md={8} lg={12}>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>
@@ -35,58 +34,56 @@ export default function Experience() {
             </Typography>
           </Grid>
           <Box className="flex">
-        <Grid xs={6}>
-        <Timeline
-      sx={{
-        [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.2,
-        },
-      }}
-    >
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-        <Typography>Eat</Typography>
-        <Typography>Because you need strength</Typography>
-        </TimelineContent>
-        
-      </TimelineItem>
-      <TimelineItem>
-
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-    </Timeline>
-        </Grid>
-        <Grid xs={6}>
-        <Timeline
-      sx={{
-        [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.2,
-        },
-      }}
-    >
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-    </Timeline>
-        </Grid>
-        </Box>
+            <Grid xs={6}>
+              <Timeline
+                sx={{
+                  [`& .${timelineOppositeContentClasses.root}`]: {
+                    flex: 0.2,
+                  },
+                }}
+              >
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    <Typography>Eat</Typography>
+                    <Typography>Because you need strength</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                  </TimelineSeparator>
+                  <TimelineContent>Code</TimelineContent>
+                </TimelineItem>
+              </Timeline>
+            </Grid>
+            <Grid xs={6}>
+              <Timeline
+                sx={{
+                  [`& .${timelineOppositeContentClasses.root}`]: {
+                    flex: 0.2,
+                  },
+                }}
+              >
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Eat</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                  </TimelineSeparator>
+                  <TimelineContent>Code</TimelineContent>
+                </TimelineItem>
+              </Timeline>
+            </Grid>
+          </Box>
           <Grid item xs={12}>
             <Grid container spacing={4} justifyContent="center">
               <Grid item>

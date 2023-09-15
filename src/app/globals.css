@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('./fonts/static/Raleway-Bold.ttf') format('truetype'); /* Corregimos la URL y especificamos el formato */
+  font-family: "Raleway";
+  src: url("./fonts/static/Raleway-Bold.ttf") format("truetype"); /* Corregimos la URL y especificamos el formato */
 }
 
 :root {
@@ -26,7 +26,7 @@
 }
 body {
   color: #ffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='3' height='3' fill-opacity='0.71' fill='%23272C2D'/%3E%3C/svg%3E");
 }
@@ -69,30 +69,42 @@ img {
   transform: translateX(-30%);
   border-radius: 50%;
   display: inline-block;
-  animation: bounce 2s infinite; 
+  animation: bounce 2s infinite;
 }
 .sombra-semicirculo {
   width: 300px;
   height: 300px;
   position: absolute;
-  background: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 190, 166, 1) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%
+  );
   border-radius: 50%;
   /* filter: blur(5rem); */
   z-index: -1;
 }
 
-  .cards {
-    width: 15rem;
-    height: 14rem;
-    /* border-width: 2px;
+.cards {
+  width: 15rem;
+  height: 14rem;
+  /* border-width: 2px;
     border-image: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
     border-image-slice: 1;
     border-image-source: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%); */
-    background-color: transparent;
-    /* margin-right: 10px; */
-  }
-.cv-button{
-  background: linear-gradient(90deg, rgb(0, 177, 190) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
+  background-color: transparent;
+  /* margin-right: 10px; */
+}
+.cv-button {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 177, 190) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%
+  );
   height: 3rem;
   width: 10rem;
   color: white;
@@ -102,28 +114,113 @@ img {
   height: 3rem;
   border-width: 2px;
   border-radius: 5px;
-  border-image: linear-gradient(90deg, rgba(0, 190, 166, 1) 5%, rgba(17, 126, 196, 1) 32%, rgba(220, 35, 236, 1) 64%, rgba(30, 96, 225, 1) 100%);
+  border-image: linear-gradient(
+    90deg,
+    rgba(0, 190, 166, 1) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%
+  );
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, rgba(0, 190, 166, 1) 5%, rgba(17, 126, 196, 1) 32%, rgba(220, 35, 236, 1) 64%, rgba(30, 96, 225, 1) 100%);
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(0, 190, 166, 1) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%
+  );
   background: transparent;
-  color: white
+  color: white;
 }
-.font-type{
-  font-family: 'Raleway', sans-serif;
+.font-type {
+  font-family: "Raleway", sans-serif;
 }
 .glass {
   margin-left: 4rem;
   margin-right: 4rem;
   border-radius: 1rem;
   font-size: 1rem;
-  color:white;
+  color: white;
   background: rgba(115, 115, 115, 0.118);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
+  animation: cardBounce 100s infinite;
 }
+
+/* .card-glass{
+  border-radius: 1.5rem;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-image-slice: 1;
+  color:white;
+  background: rgba(115, 115, 115, 0.118);
+  animation: cardBounce 100s infinite; 
+} */
+.card-glass {
+  position: relative;
+  padding: 20px 30px;
+  margin: 5px;
+  background: rgba(115, 115, 115, 0.118);
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.card-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 190, 166, 1) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes cardBounce {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0); /* Sin cambios en la posición inicial */
+  }
+  5%,
+  25%,
+  45%,
+  65%,
+  85% {
+    transform: translateY(0px); /* Suave subida */
+  }
+  15%,
+  35%,
+  55%,
+  75%,
+  95% {
+    transform: translateY(-50px); /* Suave bajada */
+  }
+}
+
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {

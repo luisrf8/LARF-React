@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
+    <main className="font-type">
       <CustomThemeProvider>
         <Section  >
           <Intro />

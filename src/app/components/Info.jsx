@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Grid, Typography, Card, CardContent } from "@mui/material";
+import { Grid, Typography, Card, CardContent, Box } from "@mui/material";
 import CircularProgressWithLabel from "../utils/progressLabel";
 import Section from "../utils/section";
 
@@ -12,6 +12,7 @@ export default function Info() {
   return (
     <Grid container className="pagination flex items-center justify-center">
       <Section>
+        <Box className="flex justify-center items-center glass">
         <Grid container spacing={2} alignItems="center" className="p-12">
           <Grid item md={1} lg={6} className="rlt" data-aos="fade-up">
             Aquí va la imagen
@@ -27,7 +28,7 @@ export default function Info() {
             </Typography> */}
               <Typography
                 variant="body1"
-                className="mb-4"
+                className="mb-4 font-type"
                 sx={{ fontSize: "1.5rem", color: "white" }}
               >
                 Luis Rojas es un talentoso desarrollador front-end con una
@@ -43,7 +44,7 @@ export default function Info() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <Typography sx={{ fontSize: "1.5rem", color: "white" }}>
+                  <Typography className="font-type" sx={{ fontSize: "1.5rem", color: "white" }}>
                     Destaca por su habilidad para combinar colores, tipografías
                     y elementos gráficos de manera innovadora, creando diseños
                     atractivos y estéticamente agradables.
@@ -57,7 +58,7 @@ export default function Info() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <Typography sx={{ fontSize: "1.5rem", color: "white" }}>
+                  <Typography className="font-type" sx={{ fontSize: "1.5rem", color: "white" }}>
                     Luis posee un profundo conocimiento de los lenguajes de
                     programación web, como HTML, CSS y JavaScript, así como de
                     los frameworks y herramientas más populares en el campo del
@@ -72,7 +73,7 @@ export default function Info() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <Typography sx={{ fontSize: "1.5rem", color: "white" }}>
+                  <Typography className="font-type" sx={{ fontSize: "1.5rem", color: "white" }}>
                     Está constantemente actualizándose y aprendiendo nuevas
                     técnicas y tecnologías. Está abierto a los desafíos y se
                     adapta rápidamente a los cambios.
@@ -82,6 +83,8 @@ export default function Info() {
             </div>
           </Grid>
         </Grid>
+
+                  </Box>
         <Grid container item className="max-w-3xl mx-auto" gap={6} md={12}>
           <Grid container justifyContent="center">
             <Grid item data-aos="fade-up" data-aos-delay="600">
@@ -126,8 +129,8 @@ export default function Info() {
             </Grid>
           </Grid>
         </Grid>
-        <div className="sombra-semicirculo" style={{ bottom: 0, left: '30%', filter: 'blur(5rem)'}}></div>
       </Section>
+        <div className="sombra-semicirculo" style={{ bottom: 0, left: '30%', filter: 'blur(5rem)'}}></div>
     </Grid>
   );
 }

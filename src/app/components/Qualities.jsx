@@ -18,8 +18,10 @@ export default function Experience() {
     <Grid
       container
       className="pagination"
+      justifyContent="center"
       alignItems="center"
     >
+      <Box className="flex">
         <Grid xs={6}>
         <Timeline
       sx={{
@@ -78,7 +80,7 @@ export default function Experience() {
       </TimelineItem>
     </Timeline>
         </Grid>
-  
+        </Box>
       <Grid item xs={12} md={8} lg={12}>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>

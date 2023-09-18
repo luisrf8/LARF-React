@@ -37,7 +37,7 @@ export default function Intro() {
         <Grid item xs={12} md={6} className="flex justify-end">
           <Image src="/images/lr-logo-white.png" width={900} height={900} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} justifyContent="center" className="justify-center">
           <Typography
             className="display-3 font-type"
             variant="body1"
@@ -50,7 +50,7 @@ export default function Intro() {
             sx={{ fontSize: "3rem" }}
             id="typed-text-element"
           ></Typography>
-          <Box className="flex row mt-4 items-center justify-start">
+          <Box className="flex row mt-4 items-center" sx={{ justifyContent: { xs: 'center', lg: 'start' } }}> 
             <Button className="mr-12 font-type cv-button" variant="outlined">
               Download CV
             </Button>

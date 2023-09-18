@@ -67,7 +67,6 @@ img {
   bottom: 80px;
   left: 50%;
   transform: translateX(-30%);
-  border-radius: 50%;
   display: inline-block;
   animation: bounce 2s infinite;
 }

@@ -71,9 +71,11 @@ export default function Intro() {
           </Box>
         </Grid>
       </Grid>
-      <div className="scroll-arrow">
-        <KeyboardArrowDown sx={{ fontSize: "4rem" }} />
-      </div>
+      <Box justifyContent="center">
+        <div className="scroll-arrow">
+          <KeyboardArrowDown sx={{ fontSize: "4rem" }} />
+        </div>
+      </Box>
     </div>
   );
 }

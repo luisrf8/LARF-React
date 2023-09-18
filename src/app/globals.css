@@ -241,7 +241,7 @@ img {
     transform: translateY(-40px);
   }
 }
-
+/* 
 .svg-frame {
 	position: relative;
 	width: 455px;
@@ -318,4 +318,4 @@ svg {
 	to {
 		transform: rotate(360deg);
 	}
-}
+} */

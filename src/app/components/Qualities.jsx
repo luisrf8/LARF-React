@@ -19,9 +19,9 @@ export default function Experience() {
       justifyContent="center"
       alignItems="center"
       >
-        <Box sx={{position: "absolute", zIndex:"-1", marginTop: "10rem"}}>
+        {/* <Box className="flex" sx={{position: "absolute", zIndex:"-1", marginLeft: "-130rem", marginTop:"10rem"}}>
           <Arc/>
-        </Box>
+        </Box> */}
       <Grid item xs={12} md={8} lg={12}>
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12}>

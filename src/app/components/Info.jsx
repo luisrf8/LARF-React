@@ -14,6 +14,15 @@ export default function Info() {
     <Grid container className="pagination flex items-center justify-center">
       <Section>
         <Box className="flex justify-center items-center glass">
+          <Box sx={{ zIndex: "-1", marginBottom: "15rem" }}>
+            <div
+              className="sombra-semicirculo"
+              style={{
+                width: "100%",
+                filter: "blur(12rem)",
+              }}
+            ></div>
+          </Box>
           <Grid container spacing={2} alignItems="center" className="p-12">
             <Grid
               item
@@ -109,17 +118,7 @@ export default function Info() {
             </Grid>
           </Grid>
         </Box>
-       
       </Section>
-      <div
-        className="sombra-semicirculo"
-        style={{
-          bottom: -600,
-          right: "10%",
-          width: "100rem",
-          filter: "blur(12rem)",
-        }}
-      ></div>
     </Grid>
   );
 }

@@ -1,9 +1,8 @@
-"use client";
 import React, { useEffect } from "react";
 import { Grid, Typography, Button, Box } from "@mui/material";
 import Image from "next/image";
-import Typed from "typed.js"
-import { KeyboardArrowDown, PlayArrow } from '@mui/icons-material';
+import Typed from "typed.js";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 export default function Intro() {
   useEffect(() => {
@@ -28,49 +27,52 @@ export default function Intro() {
 
   return (
     <div style={{ position: "relative" }}>
-      <Grid
-        container
-        className="pagination flex justify-center items-center"
-      >
-        <Grid xs={6} className="flex justify-end">
-          <Image src="/images/lr-logo-white.png" width={900} height={900}/>
+      <Box sx={{ zIndex: "-1" }}>
+        <div
+          className="sombra-semicirculo"
+          style={{ right: 0, filter: "blur(5rem)" }}
+        ></div>
+      </Box>
+      <Grid container className="pagination flex justify-center items-center">
+        <Grid item xs={12} md={6} className="flex justify-end">
+          <Image src="/images/lr-logo-white.png" width={900} height={900} />
         </Grid>
-        <Grid xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             className="display-3 font-type"
             variant="body1"
-            sx={{ fontSize: "5rem", WebkitTextStroke: "2px solid #fffff"}}
+            sx={{ fontSize: "5rem", WebkitTextStroke: "2px solid #fffff" }}
           >
             Luis Rojas
           </Typography>
           <Typography
-          className="font-type"
+            className="font-type"
             sx={{ fontSize: "3rem" }}
             id="typed-text-element"
-          >
-          </Typography>
+          ></Typography>
           <Box className="flex row mt-4 items-center justify-start">
-            <Button
-              className="mr-12 font-type cv-button"
-              variant="outlined"
-            >
+            <Button className="mr-12 font-type cv-button" variant="outlined">
               Download CV
             </Button>
             <Button
-            className="play-button font-type"
-            variant="outlined"
-            id="my-button"
-            sx={{ borderRadius: "3px" }}
+              className="play-button font-type"
+              variant="outlined"
+              id="my-button"
+              sx={{ borderRadius: "3px" }}
             >
               LinkTree
             </Button>
           </Box>
-          <div className="sombra-semicirculo" style={{ bottom: 100, left: '15%', filter: 'blur(5rem)'}}></div>
-          <div className="sombra-semicirculo" style={{ top: '5%', right: 0, filter: 'blur(5rem)'}}></div>
+          <Box sx={{ zIndex: "-1" }}>
+            <div
+              className="sombra-semicirculo"
+              style={{ left: "15%", filter: "blur(5rem)" }}
+            ></div>
+          </Box>
         </Grid>
       </Grid>
       <div className="scroll-arrow">
-        <KeyboardArrowDown sx={{ fontSize: '4rem' }} />
+        <KeyboardArrowDown sx={{ fontSize: "4rem" }} />
       </div>
     </div>
   );

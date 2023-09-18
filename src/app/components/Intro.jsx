@@ -67,7 +67,6 @@ export default function Intro() {
           </Box>
           <div className="sombra-semicirculo" style={{ bottom: 100, left: '15%', filter: 'blur(5rem)'}}></div>
           <div className="sombra-semicirculo" style={{ top: '5%', right: 0, filter: 'blur(5rem)'}}></div>
-          {/* <div className="sombra-semicirculo" style={{ top: '5%', right: 0, filter: 'blur(0.2rem)'}}></div> */}
         </Grid>
       </Grid>
       <div className="scroll-arrow">

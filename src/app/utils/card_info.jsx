@@ -9,7 +9,11 @@ import Image from 'next/image';
 function CardInfo (props)  {
   const { title, content, image } = props;
   return (
-    <Box sx={{width: '17rem', height: '20rem',}} className="card-glass" >
+    <Box sx={{width: '17rem', height: '20rem',
+  margin: '5px',
+  fontSize: '30px',
+  padding: '20px 30px', 
+}} className="card-glass" >
         <Box sx={{height: '9rem',}}>
           <Image src={image} alt="" width={900} height={900} sx={{marginBottom:'5rem'}}/>
         </Box>

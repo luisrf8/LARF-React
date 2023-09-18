@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./fonts/static/Raleway-Bold.ttf") format("truetype"); /* Corregimos la URL y especificamos el formato */
+  src: url("./fonts/static/Raleway-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -21,8 +21,8 @@
   }
 }
 .typed-cursor {
-  opacity: 0; /* Oculta el cursor */
-  display: none; /* Oculta el elemento del cursor */
+  opacity: 0; 
+  display: none; 
 }
 body {
   color: #ffff;
@@ -83,19 +83,13 @@ img {
     rgba(30, 96, 225, 1) 100%
   );
   border-radius: 50%;
-  /* filter: blur(5rem); */
   z-index: -1;
 }
 
 .cards {
   width: 15rem;
   height: 14rem;
-  /* border-width: 2px;
-    border-image: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%);
-    border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, rgba(0,190,166,1) 5%, rgba(17,126,196,1) 32%, rgba(220,35,236,1) 64%, rgba(30,96,225,1) 100%); */
   background-color: transparent;
-  /* margin-right: 10px; */
 }
 .cv-button {
   background: linear-gradient(
@@ -131,6 +125,7 @@ img {
   );
   background: transparent;
   color: white;
+  animation: pulse 2s infinite;
 }
 .font-type {
   font-family: "Raleway", sans-serif;
@@ -145,25 +140,34 @@ img {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
-  animation: cardBounce 100s infinite;
+  animation: cardBounce 60s infinite;
+}
+.text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 190, 166, 1) 5%,
+    rgba(17, 126, 196, 1) 32%,
+    rgba(220, 35, 236, 1) 64%,
+    rgba(30, 96, 225, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.skill-glass {
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: rgba(115, 115, 115, 0.118);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
 }
 
-/* .card-glass{
-  border-radius: 1.5rem;
-  border: 1.5px solid rgba(209, 213, 219, 0.3);
-  border-image-slice: 1;
-  color:white;
-  background: rgba(115, 115, 115, 0.118);
-  animation: cardBounce 100s infinite; 
-} */
 .card-glass {
   position: relative;
-  padding: 20px 30px;
-  margin: 5px;
   background: rgba(115, 115, 115, 0.118);
   border-radius: 1rem;
   display: inline-block;
-  font-size: 30px;
 }
 
 .card-glass::before {
@@ -184,7 +188,17 @@ img {
   mask-composite: exclude;
   pointer-events: none;
 }
-
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 22px rgba(51, 204, 255, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 22px rgba(32, 120, 150, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 22px rgba(51, 204, 255, 0.2);
+  }
+}
 @keyframes cardBounce {
   0%,
   10%,
@@ -197,21 +211,21 @@ img {
   80%,
   90%,
   100% {
-    transform: translateY(0); /* Sin cambios en la posición inicial */
+    transform: translateY(0); 
   }
   5%,
   25%,
   45%,
   65%,
   85% {
-    transform: translateY(0px); /* Suave subida */
+    transform: translateY(0px); 
   }
   15%,
   35%,
   55%,
   75%,
   95% {
-    transform: translateY(-50px); /* Suave bajada */
+    transform: translateY(-50px); 
   }
 }
 
@@ -226,4 +240,82 @@ img {
   40% {
     transform: translateY(-40px);
   }
+}
+
+.svg-frame {
+	position: relative;
+	width: 455px;
+	height: 455px;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: change-view 2s ease-in infinite;
+}
+
+@keyframes change-view {
+	0%,
+	50% {
+		transform: rotate(-0deg) skew(00deg) translateX(calc(0 * var(--i)))
+			translateY(calc(-0px * var(--i)));
+	}
+
+	70%,
+	100% {
+		transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i)))
+			translateY(calc(-35px * var(--i)));
+	}
+}
+
+svg {
+	position: absolute;
+	transition: 0.5s;
+	transform-origin: center;
+	width: 450px;
+	height: 450px;
+	fill: none;
+	animation: change-view 5s ease-in-out infinite alternate;
+	filter: drop-shadow(0 0 12px #00aaff);
+}
+
+#big-centro,
+#outter1,
+#solo-lines,
+#center,
+#outter-center,
+#bottom-dots,
+#center-lines,
+#squares,
+#top-dots {
+	transform-origin: center;
+	animation: rotate 4s ease-in-out infinite alternate;
+}
+
+#big-centro {
+	animation-delay: -1.5s;
+}
+
+#outter1 {
+	animation-delay: -1.2s;
+}
+
+#center {
+	animation-delay: -2.2s;
+}
+
+#bottom-dots,
+#top-dots {
+	animation-duration: 7s;
+}
+
+#center-lines,
+#outter-center {
+	animation-duration: 6s;
+	animation-delay: -3s;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
 }

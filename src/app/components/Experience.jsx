@@ -6,55 +6,64 @@ import CardInfo from "../utils/card_info";
 export default function Experience() {
   const items = [
     {
-      title: "Pagando",
-      content: "Contenido de la tarjeta 1",
-      image: "/images/lr-logo-white.png",
+      title: "Kiosqo",
+      content: "Colaboración Front en Sistema de Pagos de Servicios y Juegos de Loterías.",
+      image: "/images/logo-kq.png",
+      goto: "https://kiosqo.tech/"
     },
     {
-      title: "Animalitos",
-      content: "Contenido de la tarjeta 2",
-      image: "/images/lr-logo-white.png",
+      title: "Animalito Game",
+      content: "Colaboración Front en Sistema de Juego de Azar.",
+      image: "/images/Isotipo_Blanco.png",
+      goto: "https://animalito.kiosqo.tech/"
     },
     {
       title: "Tiquera",
-      content: "Contenido de la tarjeta 3",
-      image: "/images/lr-logo-white.png",
+      content: "Creacion de página y Colaboración Front en Sistema de apartado de Eventos.",
+      image: "/images/logo-tiquera2.png",
+      goto: "https://kiosqo.tech/"
     },
     {
-      title: "Pagando Wallet",
-      content: "Contenido de la tarjeta 4",
-      image: "/images/lr-logo-white.png",
-    },
-    {
-      title: "Animalitos Admin",
-      content: "Contenido de la tarjeta 5",
-      image: "/images/lr-logo-white.png",
-    },
-    {
-      title: "Kriptorifa",
-      content: "Contenido de la tarjeta 6",
-      image: "/images/Logo-Kriptorifa-Oficial.png",
-    },
-    {
-      title: "LARF.me",
-      content: "Contenido de la tarjeta 7",
-      image: "/images/lr-logo-white.png",
-    },
-    {
-      title: "LARF.site",
-      content: "Contenido de la tarjeta 8",
-      image: "/images/lr-logo-white.png",
+      title: "Jungla Dinamica",
+      content: "Creacion de Landing Page y Slot Machine.",
+      image: "/images/Jungla_Dinamica_Fisdsdnal.png",
+      goto: "https://kiosqo.tech/"
     },
     {
       title: "LARF.tech",
-      content: "Contenido de la tarjeta 9",
+      content: "Creacion de Pagina y Sistema Ecommerce.",
       image: "/images/lr-logo-white.png",
+      goto: "https://larf.tech/"
+    },
+    {
+      title: "Kriptorifa",
+      content: "Colaboracion Front en Sistema de compra de Rifa.",
+      image: "/images/logo-kripto2.png",
+      goto: "https://kiosqo.tech/"
+    },
+    {
+      title: "LARF.me",
+      content: "Creacion de Landing Page del desarrollador.",
+      image: "/images/lr-logo-white.png",
+      goto: "https://larf.me/"
+    },
+    {
+      title: "LARF.site",
+      content: "Creacion de Pagina y Sistema Ecommerce.",
+      image: "/images/image-removebg-preview.png",
+      goto: "https://larf.site/"
+    },
+    {
+      title: "Animalito Admin",
+      content: "Colaboracion Front en Sistema Administrativo.",
+      image: "/images/Isotipo_Blanco.png",
+      goto:"https://animalito-admin.kiosqo.tech/"
     },
   ];
   return (
-    <Grid container className="pagination" justifyContent="center">
+    <Grid className="pagination">
       <Grid item xs={12} md={8} lg={12}>
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={4} >
           <Grid item xs={12}>
             <Typography
               variant="h2"
@@ -80,9 +89,6 @@ export default function Experience() {
           ))}
         </Grid>
       </Grid>
-      {/* <div className="sombra-semicirculo" style={{ bottom: -1800, left: -150,  height:'40rem' ,filter: 'blur(6rem)'}}></div> */}
-      {/* <div className="sombra-semicirculo" style={{ bottom: -1680, left: -200, height:'30rem' , filter: 'blur(4rem)'}}></div> */}
-      {/* <div className="sombra-semicirculo" style={{ bottom: -1010, left: 10, width: '7rem',height:'7rem',  filter: 'blur(0.08rem)'}}></div> */}
     </Grid>
   );
 }

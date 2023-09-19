@@ -1,10 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Typography, Button, Box } from "@mui/material";
 import Image from "next/image";
 import Typed from "typed.js";
 import { KeyboardArrowDown } from "@mui/icons-material";
 
 export default function Intro() {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateWindowWidth);
+
+    updateWindowWidth();
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
+
   useEffect(() => {
     const options = {
       strings: [
@@ -37,45 +52,73 @@ export default function Intro() {
         <Grid item xs={12} md={6} className="flex justify-end">
           <Image src="/images/lr-logo-white.png" width={900} height={900} />
         </Grid>
-        <Grid item xs={12} md={6} justifyContent="center" className="justify-center">
+        <Grid
+          item
+          xs={12}
+          md={6}
+          justifyContent="center"
+          className="justify-center"
+        >
           <Typography
             className="display-3 font-type"
             variant="body1"
-            sx={{ fontSize: "5rem", WebkitTextStroke: "2px solid #fffff" }}
+            sx={{
+              fontSize: "5rem",
+              WebkitTextStroke: "2px solid #fffff",
+              margin: { xs: "1rem", md: "0rem", lg: "0rem" },
+            }}
           >
             Luis Rojas
           </Typography>
           <Typography
             className="font-type"
-            sx={{ fontSize: "3rem" }}
+            sx={{
+              fontSize: "3rem",
+              margin: { xs: "1rem", md: "0rem", lg: "0rem" },
+            }}
             id="typed-text-element"
           ></Typography>
-          <Box className="flex row mt-4 items-center" sx={{ justifyContent: { xs: 'center', lg: 'start' } }}> 
-            <Button className="mr-12 font-type cv-button" variant="outlined">
-              Download CV
-            </Button>
-            <Button
-              className="play-button font-type"
-              variant="outlined"
-              id="my-button"
-              sx={{ borderRadius: "3px" }}
-            >
-              LinkTree
-            </Button>
+          <Box
+            className="flex row mt-4 items-center"
+            sx={{ justifyContent: { xs: "center", lg: "start" } }}
+          >
+            <a href="../../../public/curriculum Luis Rojas 1.docx" download="CV_LuisRojas.pdf" target="_blank">
+              <Button className="mr-12 font-type cv-button" variant="outlined">
+                Download cv
+              </Button>
+            </a>
+            <a href="https://wa.me/+584148859372" target="_blank">
+              <Button
+                className="play-button font-type"
+                variant="outlined"
+                id="my-button"
+                sx={{ borderRadius: "3px" }}
+              >
+                Contact
+              </Button>
+            </a>
           </Box>
-          <Box sx={{ zIndex: "-1" }}>
-            <div
-              className="sombra-semicirculo"
-              style={{ left: "15%", filter: "blur(5rem)" }}
-            ></div>
-          </Box>
+          {windowWidth > 1560 ? (
+            <Box sx={{ zIndex: "-1" }}>
+              <div
+                className="sombra-semicirculo"
+                style={{ left: "15%", filter: "blur(5rem)" }}
+              ></div>
+            </Box>
+          ) : (
+            ""
+          )}
         </Grid>
       </Grid>
-      <Box justifyContent="center">
-        <div className="scroll-arrow">
-          <KeyboardArrowDown sx={{ fontSize: "4rem" }} />
-        </div>
-      </Box>
+      {windowWidth > 1560 ? (
+        <Box justifyContent="center">
+          <div className="scroll-arrow">
+            <KeyboardArrowDown sx={{ fontSize: "4rem" }} />
+          </div>
+        </Box>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

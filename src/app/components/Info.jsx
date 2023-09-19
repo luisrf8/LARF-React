@@ -6,10 +6,6 @@ import Section from "../utils/section";
 import Image from "next/image";
 
 export default function Info() {
-  const colorLabelVue = "#00b126";
-  const colorLabelReact = "#00d0f5";
-  const colorLabelSolidity = "#292929";
-
   return (
     <Grid container className="pagination flex items-center justify-center">
       <Section>
@@ -28,10 +24,12 @@ export default function Info() {
               item
               md={1}
               lg={4}
-              className="rlt text-center"
+              className="rlt text-center flex justify-center"
               data-aos="fade-up"
             >
-              <Image src="/images/lr-logo-white.png" width={900} height={900} />
+            <Box sx={{ width:"15rem"}}>
+              <Image src="/images/LuisRojas.png" width={900} height={900} />
+            </Box>
             </Grid>
             <Grid item md={7} lg={8} data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16">

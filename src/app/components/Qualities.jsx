@@ -58,9 +58,8 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Conexion y pago a traves de criptomonedas por diferentes
-                      blockchains. Conexion y pago a traves de criptomonedas por
-                      diferentes blockchains.
+                      A traves del desarrollo de aplicaciones web se puede realizar conexiones y pagos a traves de criptomonedas por diferentes
+                      blockchains dandole asi mas integraciones y posibilidades de pago para los usuarios.
                     </Typography>
                   </Box>
                 </Box>
@@ -78,10 +77,8 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Funciones para transferir tokens, manejar pagos, almacenar
-                      datos en la cadena de bloques y más. Funciones para
-                      transferir tokens, manejar pagos, almacenar datos en la
-                      cadena de bloques y más.
+                      Dependiendo del alcance de la aplicacion web se pueden implementar servicios en Solidity para realizar funciones para transferir tokens, manejar pagos, almacenar
+                      datos en la cadena de bloques y más. 
                     </Typography>
                   </Box>
                 </Box>
@@ -120,7 +117,7 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Comandos de Git, Resolución de conflictos, Ramas remotas y
+                      Buen manejo de Almacenamiento en diferentes servicios de Git y sus Comandos, Resolución de conflictos, Ramas remotas y
                       colaboración, Solución de problemas y gestión de errores.
                     </Typography>
                   </Box>
@@ -141,10 +138,8 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Marco de trabajo Scrum, Jira, Creación y estimación de
-                      tareas, Creación y estimación de tareas. Marco de trabajo
-                      Scrum, Jira, Creación y estimación de tareas, Creación y
-                      estimación de tareas.
+                      Al desarrollar se usa como metodologia de trabajo y Marco de trabajo Scrum, usando como enfoque principal el tablero de Jira para asi optimizar el desarrollo en Creación y estimación de
+                      tareas, organizacion, enfoque y tiempos de desarrollo.
                     </Typography>
                   </Box>
                 </Box>
@@ -165,7 +160,7 @@ export default function Experience() {
                     </svg>
                     <Typography className="font-type">
                       Se sabe trabajar con el desarrollador backend y Diseñador
-                      definir las interfaces, API en la comunicación entre el
+                      definir las interfaces, APIS en la comunicación entre el
                       front-end y el back-end. Establecer conexión (endpoints),
                       datos y los métodos de comunicación y el diseño de la
                       interfaz.

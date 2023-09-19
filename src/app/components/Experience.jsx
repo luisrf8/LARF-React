@@ -84,6 +84,7 @@ export default function Experience() {
                 title={item.title}
                 content={item.content}
                 image={item.image}
+                goto={item.goto}
               />
             </Grid>
           ))}

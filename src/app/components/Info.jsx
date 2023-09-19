@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Grid, Typography, Card, CardContent, Box } from "@mui/material";
-import CircularProgressWithLabel from "../utils/progressLabel";
 import Section from "../utils/section";
 import Image from "next/image";
 
@@ -42,9 +41,7 @@ export default function Info() {
                     textShadow: "2px 2px 4px rgba(0, 0, 0, 4)",
                   }}
                 >
-                  Luis Rojas es un talentoso desarrollador front-end con una
-                  sólida experiencia en la creación de interfaces de usuario
-                  impresionantes.
+                  Luis Rojas, desarrollador front-end con experiencia en la creación de interfaces de usuario.
                 </Typography>
                 <ul className="text-gray-400 -mb-2">
                   <li className="flex items-center mb-2">
@@ -63,7 +60,7 @@ export default function Info() {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 4)",
                       }}
                     >
-                      Destaca por su habilidad para combinar colores,
+                      Habilidad para combinar colores,
                       tipografías y elementos gráficos de manera innovadora,
                       creando diseños atractivos y estéticamente agradables.
                     </Typography>
@@ -84,7 +81,7 @@ export default function Info() {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 4)",
                       }}
                     >
-                      Luis posee un profundo conocimiento de los lenguajes de
+                      Conocimiento de los lenguajes de
                       programación web, como HTML, CSS y JavaScript, así como de
                       los frameworks y herramientas más populares en el campo
                       del desarrollo front-end.
@@ -106,7 +103,7 @@ export default function Info() {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 4)",
                       }}
                     >
-                      Está constantemente actualizándose y aprendiendo nuevas
+                      Constantemente actualizándose y aprendiendo nuevas
                       técnicas y tecnologías. Está abierto a los desafíos y se
                       adapta rápidamente a los cambios.
                     </Typography>

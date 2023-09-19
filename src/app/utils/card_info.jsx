@@ -23,7 +23,6 @@ function CardInfo(props) {
           alt=""
           width={900}
           height={900}
-          sx={{  }}
         />
       </Box>
       <Box className="" sx={{display:"flex", flexDirection:"column", marginLeft:"1rem"}}>

@@ -38,11 +38,10 @@ function CardInfo(props) {
           {content}
         </Typography>
       </Box>
-      <a href={goto} target="_blank">
-        <Button className="font-type got-to-button" sx={{ marginTop:""}}>
-          Go to
+      {/* <a href={goto} target="_blank"> */}
+        <Button className="font-type got-to-button" sx={{ marginTop:"1rem"}}>
         </Button>
-        </a>
+        {/* </a> */}
     </Box>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Arc from "../utils/arc.jsx";
 
 export default function Experience() {
   return (
@@ -12,9 +11,6 @@ export default function Experience() {
         justifyContent="center"
         alignItems="center"
       >
-        {/* <Box className="flex" sx={{ position: "absolute", zIndex: "-1", marginLeft: "-130rem", marginTop: "10rem" }}>
-        <Arc />
-      </Box> */}
         <Box sx={{ zIndex: "-1" }}>
           <div
             className="sombra-semicirculo"
@@ -58,8 +54,10 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      A traves del desarrollo de aplicaciones web se puede realizar conexiones y pagos a traves de criptomonedas por diferentes
-                      blockchains dandole asi mas integraciones y posibilidades de pago para los usuarios.
+                      A traves del desarrollo de aplicaciones web se puede
+                      realizar conexiones y pagos a traves de criptomonedas por
+                      diferentes blockchains dandole asi mas integraciones y
+                      posibilidades de pago para los usuarios.
                     </Typography>
                   </Box>
                 </Box>
@@ -77,8 +75,10 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Dependiendo del alcance de la aplicacion web se pueden implementar servicios en Solidity para realizar funciones para transferir tokens, manejar pagos, almacenar
-                      datos en la cadena de bloques y más. 
+                      Dependiendo del alcance de la aplicacion web se pueden
+                      implementar servicios en Solidity para realizar funciones
+                      para transferir tokens, manejar pagos, almacenar datos en
+                      la cadena de bloques y más.
                     </Typography>
                   </Box>
                 </Box>
@@ -117,8 +117,10 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Buen manejo de Almacenamiento en diferentes servicios de Git y sus Comandos, Resolución de conflictos, Ramas remotas y
-                      colaboración, Solución de problemas y gestión de errores.
+                      Buen manejo de Almacenamiento en diferentes servicios de
+                      Git y sus Comandos, Resolución de conflictos, Ramas
+                      remotas y colaboración, Solución de problemas y gestión de
+                      errores.
                     </Typography>
                   </Box>
                 </Box>
@@ -138,8 +140,11 @@ export default function Experience() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <Typography className="font-type">
-                      Al desarrollar se usa como metodologia de trabajo y Marco de trabajo Scrum, usando como enfoque principal el tablero de Jira para asi optimizar el desarrollo en Creación y estimación de
-                      tareas, organizacion, enfoque y tiempos de desarrollo.
+                      Al desarrollar se usa como metodologia de trabajo y Marco
+                      de trabajo Scrum, usando como enfoque principal el tablero
+                      de Jira para asi optimizar el desarrollo en Creación y
+                      estimación de tareas, organizacion, enfoque y tiempos de
+                      desarrollo.
                     </Typography>
                   </Box>
                 </Box>

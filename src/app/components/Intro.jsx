@@ -82,7 +82,11 @@ export default function Intro() {
             className="flex row mt-4 items-center"
             sx={{ justifyContent: { xs: "center", lg: "start" } }}
           >
-            <a href="../../../public/curriculum Luis Rojas 1.docx" download="CV_LuisRojas.pdf" target="_blank">
+            <a
+              href="../../../public/curriculum Luis Rojas 1.docx"
+              download="CV_LuisRojas.pdf"
+              target="_blank"
+            >
               <Button className="mr-12 font-type cv-button" variant="outlined">
                 Download cv
               </Button>

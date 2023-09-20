@@ -172,7 +172,6 @@ img {
   justify-content: center;
   align-items: center;
   animation: cardBounce 7s infinite;
-  /* animation: spin 1s infinite linear; */
 }
 .got-to-button {
   color: white;

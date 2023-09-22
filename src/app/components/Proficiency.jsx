@@ -30,7 +30,7 @@ export default function Projects() {
     },
   ];
   return (
-    <Grid container sx={{marginBottom:"10rem", paddingLeft:"5rem", paddingRight:"5rem",}}>
+    <Grid container sx={{marginBottom:"10rem", paddingLeft:{md:"5rem"}, paddingRight:{md:"5rem"},}}>
       <Grid item xs={12}>
         <Typography
           variant="h2"

@@ -18,7 +18,7 @@ export default function Experience() {
           ></div>
         </Box>
         <Grid item xs={12} md={8} lg={12}
-        sx={{paddingLeft: "3rem", paddingRight:"3rem"}}
+        sx={{paddingLeft: {md:"3rem"}, paddingRight: {md:"3rem"}}}
         >
           <Grid
             spacing={4}

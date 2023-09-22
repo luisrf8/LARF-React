@@ -19,7 +19,6 @@ export default function Experience() {
         </Box>
         <Grid item xs={12} md={8} lg={12}>
           <Grid
-            container
             spacing={4}
             alignItems="center"
             justifyContent="center"
@@ -37,8 +36,6 @@ export default function Experience() {
             <Box
               className="flex"
               sx={{
-                marginRight: "8rem",
-                marginLeft: "8rem",
                 marginTop: "4rem",
               }}
             >

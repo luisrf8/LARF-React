@@ -25,7 +25,7 @@ function CardInfo(props) {
         }}
         className="flex "
       >
-        <Image src={image} alt="" width={900} height={900} />
+        <img src={image} alt="" width={900} height={900} />
       </Box>
       <Box
         className=""

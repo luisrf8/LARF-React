@@ -3,7 +3,7 @@ import * as React from "react";
 import Intro from "./components/Intro";
 import Info from "./components/Info";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
+import Proficiency from "./components/Proficiency";
 import SocialMedia from "./components/SocialMedia";
 import Qualities from "./components/Qualities";
 import Section from "./utils/section";
@@ -19,10 +19,10 @@ export default function Home() {
         </Section>
         <Info />
         <Section>
-          <Experience />
+          <Proficiency />
         </Section>
         <Section>
-          <Projects />
+          <Experience />
         </Section>
         <Section>
           <Qualities />

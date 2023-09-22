@@ -34,6 +34,8 @@ export default function SocialMedia() {
         Contact Us.
       </Typography>
       <Box
+      justifyContent="center"
+        align="center"
         sx={{
           display: "flex",
           justifyContent: "center",

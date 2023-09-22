@@ -27,7 +27,7 @@ export default function Info() {
               data-aos="fade-up"
             >
               <Box sx={{ width: "15rem" }}>
-                <Image src="/images/LuisRojas.png" width={900} height={900} />
+                <img src="/images/LuisRojas.png" width={900} height={900} />
               </Box>
             </Grid>
             <Grid item md={7} lg={8} data-aos="fade-right">

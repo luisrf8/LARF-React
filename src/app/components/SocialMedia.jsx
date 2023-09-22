@@ -43,6 +43,7 @@ export default function SocialMedia() {
           "& > *": {
             m: 1,
           },
+
         }}
       >
         <Grid item xs={12} md={8} lg={12}>

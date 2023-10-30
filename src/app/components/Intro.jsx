@@ -79,7 +79,7 @@ export default function Intro() {
           ></Typography>
           <Box
             className="flex row mt-4 items-center"
-            sx={{ justifyContent: { xs: "center", lg: "start" } }}
+            sx={{ justifyContent: { xs: "center", lg: "start" }, marginLeft: {xs: "1rem"} }}
           >
             <a
               href="../../../public/curriculum Luis Rojas 1.docx"

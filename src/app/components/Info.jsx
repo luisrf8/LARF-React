@@ -1,14 +1,28 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Typography, Box } from "@mui/material";
 import Section from "../utils/section";
 import Image from "next/image";
 
 export default function Info() {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateWindowWidth);
+
+    updateWindowWidth();
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
   return (
     <Grid container className="pagination flex items-center justify-center">
       <Section>
-        <Box className="flex justify-center items-center glass">
+        <Box className="flex justify-center items-center glass" sx={{marginLeft: {xs: "1rem", md:"4rem"}, marginRight: {xs: "1rem", md:"4rem"}}}>
           <Box sx={{ zIndex: "-1", marginBottom: "15rem" }}>
             <div
               className="sombra-semicirculo"
@@ -26,7 +40,7 @@ export default function Info() {
               className="rlt text-center flex justify-center"
               data-aos="fade-up"
             >
-              <Box sx={{ width: "15rem" }}>
+              <Box sx={{ width: {md:"15rem"} }}>
                 <img src="/images/LuisRojas.png" width={900} height={900} />
               </Box>
             </Grid>
@@ -46,13 +60,15 @@ export default function Info() {
                 </Typography>
                 <ul className="text-gray-400 -mb-2">
                   <li className="flex items-center mb-2">
+                  {windowWidth > 1560 ? (
                     <svg
-                      className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
+                    className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  ) : "" }
                     <Typography
                       className="font-type"
                       sx={{
@@ -67,13 +83,15 @@ export default function Info() {
                     </Typography>
                   </li>
                   <li className="flex items-center mb-2">
+                  {windowWidth > 1560 ? (
                     <svg
-                      className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
+                    className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  ) : "" }
                     <Typography
                       className="font-type"
                       sx={{
@@ -89,13 +107,15 @@ export default function Info() {
                     </Typography>
                   </li>
                   <li className="flex items-center">
+                  {windowWidth > 1560 ? (
                     <svg
-                      className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
+                    className="mr-5 w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  ) : "" }
                     <Typography
                       className="font-type"
                       sx={{

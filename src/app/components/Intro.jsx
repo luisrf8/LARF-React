@@ -32,9 +32,7 @@ export default function Intro() {
       smartBackspace: true,
       loop: true,
     };
-
     const typed = new Typed("#typed-text-element", options);
-
     return () => {
       typed.destroy();
     };
@@ -65,7 +63,7 @@ export default function Intro() {
             sx={{
               fontSize: "5rem",
               WebkitTextStroke: "2px solid #fffff",
-              margin: { xs: "1rem", md: "0rem", lg: "0rem" },
+              margin: { xs: "0.8rem", md: "0rem", lg: "0rem" },
             }}
           >
             Luis Rojas
@@ -75,6 +73,7 @@ export default function Intro() {
             sx={{
               fontSize: "3rem",
               margin: { xs: "1rem", md: "0rem", lg: "0rem" },
+              display: { xs: "none", md:"block"}
             }}
             id="typed-text-element"
           ></Typography>
@@ -85,18 +84,17 @@ export default function Intro() {
             <a
               href="../../../public/curriculum Luis Rojas 1.docx"
               download="CV_LuisRojas.pdf"
-              target="_blank"
             >
-              <Button className="mr-12 font-type" variant="outlined"
-            sx={{ borderRadius: "3px",  width: "10rem",
-            height: "3rem",
-            borderWidth: "2px",
-            borderRadius: "5px",
-            borderImageSlice: "1",
-            background: "transparent",
-            color: "white",
-            animation: "pulse 2s infinite", }}
-          >
+              <Button className=" font-type" variant="outlined"
+                sx={{ borderRadius: "3px",  width: "100%",
+                height: "3rem",
+                borderWidth: "2px",
+                borderRadius: "5px",
+                borderImageSlice: "1",
+                background: "transparent",
+                color: "white",
+                animation: "pulse 2s infinite", }}
+              >
                 Download cv
               </Button>
             </a>

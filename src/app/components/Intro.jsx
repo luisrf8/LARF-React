@@ -87,20 +87,36 @@ export default function Intro() {
               download="CV_LuisRojas.pdf"
               target="_blank"
             >
-              <Button className="mr-12 font-type cv-button" variant="outlined">
+              <Button className="mr-12 font-type" variant="outlined"
+            sx={{ borderRadius: "3px",  width: "10rem",
+            height: "3rem",
+            borderWidth: "2px",
+            borderRadius: "5px",
+            borderImageSlice: "1",
+            background: "transparent",
+            color: "white",
+            animation: "pulse 2s infinite", }}
+          >
                 Download cv
               </Button>
             </a>
-            <a href="https://wa.me/+584148859372" target="_blank">
+            {/* <a href="https://wa.me/+584148859372" target="_blank">
               <Button
-                className="play-button font-type"
+                className="ml-4 font-type"
                 variant="outlined"
                 id="my-button"
-                sx={{ borderRadius: "3px" }}
+                sx={{ borderRadius: "3px",  width: "10rem",
+                height: "3rem",
+                borderWidth: "2px",
+                borderRadius: "5px",
+                borderImageSlice: "1",
+                background: "transparent",
+                color: "white",
+                animation: "pulse 2s infinite", }}
               >
                 Contact
               </Button>
-            </a>
+            </a> */}
           </Box>
           {windowWidth > 1560 ? (
             <Box sx={{ zIndex: "-1" }}>
